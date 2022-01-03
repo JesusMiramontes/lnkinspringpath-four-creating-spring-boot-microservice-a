@@ -15,10 +15,16 @@ public class TourPackageService {
     }
 
     public TourPackage createTourPackage(String code, String name){
-        return new TourPackage(code, name);
+        return tourPackageRepository.findById(code)
+                .orElse(tourPackageRepository.save(new TourPackage(code, name)));
+
     }
 
-    public Iterable<TourPackage> lookup(){return null;}
+    public Iterable<TourPackage> lookup(){
+        return tourPackageRepository.findAll();
+    }
 
-    public long total(){return 0;}
+    public long total(){
+        return tourPackageRepository.count();
+    }
 }
