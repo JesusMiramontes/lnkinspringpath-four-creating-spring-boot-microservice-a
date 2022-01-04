@@ -4,6 +4,7 @@ Code part of course: https://www.linkedin.com/learning/creating-your-first-sprin
 
 
 ## Topics
-
+1) Spring Data Query Custom Methods.
+2) JPA Relationships
 
 ## Tools
