@@ -2,10 +2,12 @@ package com.miramontes.four.linkin.becomespringdev.a.repositories;
 
 import com.miramontes.four.linkin.becomespringdev.a.model.TourPackage;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.data.rest.core.annotation.RestResource;
 import org.springframework.stereotype.Repository;
 
 @Repository
+@RepositoryRestResource(collectionResourceRel = "packages", path = "packages")
 public interface TourPackageRepository extends CrudRepository<TourPackage, String> {
     public TourPackage findByName(String name);
 
