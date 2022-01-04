@@ -3,20 +3,22 @@ package com.miramontes.four.linkin.becomespringdev.a.repositories;
 import com.miramontes.four.linkin.becomespringdev.a.model.Difficulty;
 import com.miramontes.four.linkin.becomespringdev.a.model.Region;
 import com.miramontes.four.linkin.becomespringdev.a.model.Tour;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.List;
 
 @Repository
-public interface TourRepository extends CrudRepository<Tour, Integer> {
+public interface TourRepository extends PagingAndSortingRepository<Tour, Integer> {
     List<Tour> findByTitle(String title);
     List<Tour> findByPrice(Integer price);
     Collection<Tour> findByDifficulty(Difficulty difficulty);
     List<Tour> findByRegion(Region region);
 
-    List<Tour> findByTourPackageCode(String code);
+    List<Tour> findByTourPackageCode(String code, Pageable pageable);
     List<Tour> findByTourPackageCodeAndRegion(String code, Region region);
     List<Tour> findByRegionIn(List<Region> regions);
     List<Tour> findByPriceLessThan(Integer maxPrice);
