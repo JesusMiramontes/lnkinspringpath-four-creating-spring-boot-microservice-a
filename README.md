@@ -8,6 +8,8 @@ Code part of course: https://www.linkedin.com/learning/creating-your-first-sprin
 2) JPA Relationships
 3) Paging
 4) Sorting
+5) Controlling API exposure
+6) **@RestResource(exported = false)**: Won't expose this method.
 
 ## Tools
 
