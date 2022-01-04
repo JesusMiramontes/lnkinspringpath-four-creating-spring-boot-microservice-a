@@ -31,7 +31,7 @@ public class SeedValues implements CommandLineRunner {
         // title | description | blurb | price | duration | keywords | tourPackageName | difficulty | region
             tourService.createTour("title1", "description1", "blurb1", 1, "duration1", "keywords1", "BC", Difficulty.Easy, Region.Central_Coast);
         tourService.createTour("title2", "description2", "blurb2", 2, "duration2", "keywords2", "CC", Difficulty.Medium, Region.Northern_California);
-        tourService.createTour("title3", "description3", "blurb3", 3, "duration3", "keywords3", "CH", Difficulty.Difficult, Region.Varies);
+        tourService.createTour("title3", "description3", "blurb3", 3, "duration3", "keywords3", "CC", Difficulty.Difficult, Region.Varies);
         tourService.createTour("title4", "description4", "blurb4", 4, "duration4", "keywords4", "CY", Difficulty.Varies, Region.Southern_California);
     }
 

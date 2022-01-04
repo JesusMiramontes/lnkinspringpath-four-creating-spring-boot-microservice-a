@@ -8,3 +8,7 @@ Code part of course: https://www.linkedin.com/learning/creating-your-first-sprin
 2) JPA Relationships
 
 ## Tools
+
+## Links
+Postman
+* http://localhost:8080/tourPackages/search/findByName?name=California%Calm

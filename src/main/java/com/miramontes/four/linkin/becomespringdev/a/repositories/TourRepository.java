@@ -16,6 +16,7 @@ public interface TourRepository extends CrudRepository<Tour, Integer> {
     Collection<Tour> findByDifficulty(Difficulty difficulty);
     List<Tour> findByRegion(Region region);
 
+    List<Tour> findByTourPackageCode(String code);
     List<Tour> findByTourPackageCodeAndRegion(String code, Region region);
     List<Tour> findByRegionIn(List<Region> regions);
     List<Tour> findByPriceLessThan(Integer maxPrice);
