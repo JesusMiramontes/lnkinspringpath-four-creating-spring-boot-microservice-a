@@ -23,5 +23,5 @@ Code part of course: https://www.linkedin.com/learning/creating-your-first-sprin
 Postman
 * http://localhost:8080/packages/search/findByName?name=California%Calm
 * ** Paging and sorting:** http://localhost:8080/tours?size=1&page=0&sort=title,asc
-* http://localhost:8080/tours/{tourId}/ratings POST, GET
+* http://localhost:8080/tours/{tourId}/ratings POST, GET, PATCH, PUT, DELETE
 * http://localhost:8080/tours/{tourId}/ratings/average GET
