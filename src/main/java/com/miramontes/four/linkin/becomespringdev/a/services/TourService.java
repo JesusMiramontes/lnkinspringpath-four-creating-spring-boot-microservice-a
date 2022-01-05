@@ -1,6 +1,9 @@
 package com.miramontes.four.linkin.becomespringdev.a.services;
 
-import com.miramontes.four.linkin.becomespringdev.a.model.*;
+import com.miramontes.four.linkin.becomespringdev.a.model.Difficulty;
+import com.miramontes.four.linkin.becomespringdev.a.model.Region;
+import com.miramontes.four.linkin.becomespringdev.a.model.Tour;
+import com.miramontes.four.linkin.becomespringdev.a.model.TourPackage;
 import com.miramontes.four.linkin.becomespringdev.a.repositories.TourPackageRepository;
 import com.miramontes.four.linkin.becomespringdev.a.repositories.TourRepository;
 import org.springframework.beans.factory.annotation.Autowired;

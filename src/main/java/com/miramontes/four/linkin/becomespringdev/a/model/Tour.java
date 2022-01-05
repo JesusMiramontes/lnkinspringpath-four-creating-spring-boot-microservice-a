@@ -1,6 +1,8 @@
 package com.miramontes.four.linkin.becomespringdev.a.model;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.Hibernate;
 
 import javax.persistence.*;
