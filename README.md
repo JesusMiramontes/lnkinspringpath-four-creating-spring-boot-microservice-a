@@ -12,6 +12,7 @@ Code part of course: https://www.linkedin.com/learning/creating-your-first-sprin
 6) **@RestResource(exported = false)**: Won't expose this method.\
 7) RestController
 8) @PathVariable
+9) Logging
 
 ## Tools
 1) spring-data-rest-hal-explorer
